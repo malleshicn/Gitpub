@@ -2,9 +2,21 @@ pipeline {
   agent any
   stages {
     stage('build test') {
-      steps {
-        echo 'hello build'
-        echo 'hello build'
+      parallel {
+        stage('build test') {
+          steps {
+            echo 'hello build'
+            echo 'hello build'
+          }
+        }
+        stage('test username') {
+          steps {
+            sh '''#/usr/bin/bash
+
+whoami
+date ; hostname'''
+          }
+        }
       }
     }
   }
