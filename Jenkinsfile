@@ -16,7 +16,8 @@ pipeline {
 whoami
 date ; hostname
 
-echo" display PWD"
+echo " display PWD"
+
 pwd'''
           }
         }
