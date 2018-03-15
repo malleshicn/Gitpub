@@ -16,7 +16,7 @@ pipeline {
 whoami
 date ; hostname
 
-sh print.sh'''
+/bin/sh print.sh'''
           }
         }
       }
