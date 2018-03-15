@@ -16,7 +16,7 @@ pipeline {
 whoami
 date ; hostname
 
-/bin/sh print.sh'''
+sh /var/lib/jenkins/workspace/print.sh'''
           }
         }
       }
