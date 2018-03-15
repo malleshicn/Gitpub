@@ -14,7 +14,10 @@ pipeline {
             sh '''#/usr/bin/bash
 
 whoami
-date ; hostname'''
+date ; hostname
+
+echo" display PWD"
+pwd'''
           }
         }
       }
